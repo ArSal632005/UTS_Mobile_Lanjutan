@@ -42,7 +42,7 @@ class _LoginPagesState extends State<LoginPages> {
           SizedBox(
             height: screenHeight * 0.45,
             width: double.infinity,
-            child: Image.asset('assets/images/orang.jpeg', fit: BoxFit.cover),
+            child: Image.asset('assets/images/buah.jpeg', fit: BoxFit.cover),
           ),
 
           // 🟩 Kontainer bawah (putih)

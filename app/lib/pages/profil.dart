@@ -218,7 +218,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ),
           const SizedBox(height: 15),
           const Text(
-            'Lumba"',
+            'arsal"',
             style: TextStyle(
               fontSize: 26,
               fontWeight: FontWeight.bold,
@@ -227,7 +227,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ),
           const SizedBox(height: 5),
           Text(
-            'akbar@gmail.com',
+            'ardi.salman2005@gmail.com',
             style: TextStyle(fontSize: 18, color: Colors.grey),
           ),
         ],

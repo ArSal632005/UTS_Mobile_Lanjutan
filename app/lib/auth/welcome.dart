@@ -20,7 +20,7 @@ class WelcomePage extends StatelessWidget {
               fit: StackFit.expand,
               children: [
                 // 🌄 Gambar background
-                Image.asset('assets/images/orang.jpeg', fit: BoxFit.cover),
+                Image.asset('assets/images/buah.jpeg', fit: BoxFit.cover),
 
                 // 🌑 Overlay gelap
                 Container(color: Colors.black.withOpacity(0.3)),

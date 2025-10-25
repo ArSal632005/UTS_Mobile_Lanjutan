@@ -6,12 +6,13 @@ class CategoriesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<Map<String, dynamic>> categories = [
-      {"name": "Makanan", "icon": Icons.restaurant_menu, "color": Colors.orange.shade100},
-      {"name": "Minuman Dingin", "icon": Icons.local_drink, "color": Colors.blue.shade100},
-      {"name": "Snack", "icon": Icons.fastfood, "color": Colors.pink.shade100},
-      {"name": "Kopi", "icon": Icons.coffee, "color": Colors.brown.shade100},
-      {"name": "Dessert", "icon": Icons.icecream, "color": Colors.purple.shade100},
+      {"name": "Jus", "icon": Icons.local_drink, "color": Colors.orange.shade100},
+      {"name": "Salad", "icon": Icons.eco, "color": Colors.green.shade100},
+      {"name": "Smoothie", "icon": Icons.blender, "color": Colors.pink.shade100},
+      {"name": "Puding Buah", "icon": Icons.icecream, "color": Colors.purple.shade100},
     ];
+
+
     return Scaffold(
       backgroundColor: const Color(0xFFF8F9FB),
       appBar: AppBar(

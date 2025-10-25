@@ -26,100 +26,87 @@ class _DashboardPageState extends State<DashboardPage> {
 
   final List<Map<String, String>> banners = [
     {
-      'image': 'assets/images/baner.jpg',
+      'image': 'assets/images/banner1.jpg',
       'text': '20% off on your\nfirst purchase',
     },
     {
-      'image': 'assets/images/baner2.jpg',
+      'image': 'assets/images/banner2.jpg',
       'text': 'Buy 1 Get 1 Free\non cold drinks!',
     },
     {
-      'image': 'assets/images/baner3.jpg',
+      'image': 'assets/images/banner3.jpg',
       'text': 'Free delivery\nfor orders above 50k!',
     },
   ];
 
   final Map<String, List<Map<String, String>>> productsByCategory = {
-    "Makanan": [
+    "Jus": [
       {
-        "name": "Nasi Goreng",
+        "name": "Jus Mangga",
         "price": "12.000",
-        "unit": "per porsi",
-        "image": "assets/images/n.png",
+        "unit": "per gelas",
+        "image": "assets/images/jus-mangga.png",
       },
       {
-        "name": "Mie Goreng",
-        "price": "10.000",
-        "unit": "per porsi",
-        "image": "assets/images/mei.png",
-      },
-    ],
-    "Minuman Dingin": [
-      {
-        "name": "Es Kopi Susu",
-        "price": "10.000",
-        "unit": "gelas",
-        "image": "assets/images/t.png",
-      },
-      {
-        "name": "Es Teh Manis",
-        "price": "5.000",
-        "unit": "gelas",
-        "image": "assets/images/t.png",
-      },
-    ],
-    "Snack": [
-      {
-        "name": "Kentang Goreng",
-        "price": "8.000",
-        "unit": "porsi",
-        "image": "assets/images/ke.png",
-      },
-      {
-        "name": "Roti Bakar",
-        "price": "7.000",
-        "unit": "porsi",
-        "image": "assets/images/r.png",
-      },
-    ],
-    "Kopi": [
-      {
-        "name": "Kopi Hitam",
-        "price": "6.000",
-        "unit": "gelas",
-        "image": "assets/images/kopi.png",
-      },
-      {
-        "name": "Cappuccino",
-        "price": "9.000",
-        "unit": "gelas",
-        "image": "assets/images/capu.png",
-      },
-    ],
-    "Dessert": [
-      {
-        "name": "Pudding Coklat",
-        "price": "8.000",
-        "unit": "cup",
-        "image": "assets/images/pu.png",
-      },
-      {
-        "name": "Cheesecake",
+        "name": "Jus Strawberry", 
         "price": "15.000",
-        "unit": "slice",
-        "image": "assets/images/c.png",
+        "unit": "per gelas",
+        "image": "assets/images/jus-Strawberry.png",
+      },
+    ],
+    "Salad": [
+      {
+        "name": "Salad Buah Tropis",
+        "price": "18.000",
+        "unit": "per porsi",
+        "image": "assets/images/Salad-Buah-Tropis.png",
+      },
+      {
+        "name": "Salad Buah Berry",
+        "price": "20.000",
+        "unit": "per porsi",
+        "image": "assets/images/Salad Buah Berry.png",
+      },
+    ],
+    "Smoothie": [
+      {
+        "name": "Smoothie Mangga",
+        "price": "17.000",
+        "unit": "per gelas",
+        "image": "assets/images/Smoothie Mangga.png",
+      },
+      {
+        "name": "Smoothie Berry",
+        "price": "19.000",
+        "unit": "per gelas",
+        "image": "assets/images/Smoothie Berry.png",
+      },
+    ],
+    "Puding Buah": [
+      {
+        "name": "Puding Mangga",
+        "price": "12.000",
+        "unit": "per cup",
+        "image": "assets/images/Puding Mangga.png",
+      },
+      {
+        "name": "Puding Mixed Berry",
+        "price": "14.000",
+        "unit": "per cup",
+        "image": "assets/images/Puding Mixed Berry.png",
       },
     ],
   };
 
+
   final Map<String, List<Color>> categoryColors = {
     "All": [Color(0xFF00BFA6), Color(0xFF70EED6)],
-    "Makanan": [Color(0xFF32A0D3), Color(0xFFFFA48B)],
-    "Minuman Dingin": [Color(0xFF2DA324), Color(0xFF7BE37B)],
-    "Snack": [Color(0xFFE6B838), Color(0xFFFFD95B)],
-    "Kopi": [Color(0xFF844BEE), Color(0xFFB69CFF)],
-    "Dessert": [Color(0xFFF36EB7), Color(0xFFFFA8D9)],
+    "Jus": [Color(0xFFFF9800), Color(0xFFFFCC80)],        // oranye segar
+    "Salad": [Color(0xFF4CAF50), Color(0xFF81C784)],      // hijau alami
+    "Smoothie": [Color(0xFFE91E63), Color(0xFFF8BBD0)],   // pink lembut
+    "Puding Buah": [Color(0xFF9C27B0), Color(0xFFD1C4E9)],// ungu manis
   };
+
 
   @override
   Widget build(BuildContext context) {
